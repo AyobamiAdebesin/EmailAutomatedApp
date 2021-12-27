@@ -64,7 +64,7 @@ print('Composing email...')
 SERVER = 'smtp.gmail.com'  # your smtp server
 PORT = 587  # your port  number
 FROM = 'saadebesin@student.oauife.edu.ng'
-TO = 'froshofficial@gmail.com'  # your to email id . This can be a list
+TO = 'eqwoeavklouf@dropmail.me'  # your to email id . This can be a list
 PASS = 'Olaseni..1996'  # your email id password
 
 # Create a text/plain message
