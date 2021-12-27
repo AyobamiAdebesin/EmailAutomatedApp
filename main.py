@@ -15,29 +15,6 @@ now = datetime.datetime.now()
 # email content placeholder
 content = ''
 
-
-# # Class based Implementation
-# class ExtractNews:
-#
-#     def __init__(self, url, site_name):
-#         self.url = url
-#         self.site_name = site_name
-#
-#     def extract_news(self):
-#         print('Extracting ' + self.site_name.upper() + ' ' + 'news Stories')
-#         cnt = ''
-#         cnt += '<b>HN Top Stories: </b> \n ' + '<br>' + '-' * 50 + '</br>'
-#         response = requests.get(self.url)
-#         content = response.content
-#         soup = BeautifulSoup(content, 'html.parser')
-#         for i, tag in enumerate(soup.find_all('td', attrs={'class': 'title', 'valign': ''})):
-#             cnt += ((str(i + 1) + ' :: ' + tag.text + "\n" + '<br>') if tag.text != 'More' else '')
-#         return cnt
-#
-#     def email_authentication(self):
-#         print('Authenticating email...')
-
-
 # extracting Hacker News stories
 def extract_news(url):
     print('Extracting Hacker News Stories...')
